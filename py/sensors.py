@@ -100,3 +100,4 @@ def download_all_urls():
     with ThreadPoolExecutor(max_workers=5) as executor:  # Adjust max_workers as needed
         executor.map(download_one_url, links)
 
+download_all_urls()
